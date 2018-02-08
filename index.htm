@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Registration form</title>
+<style>
+td
+{
+text-align:left;
+padding:10px;
+}
+</style>
+</head>
+
+<body style="background-color:#ffc34d;">
+<center>
+<header style=" padding: 1em;color:white;background-color:#3385ff;clear: left;text-align: center;">
+   <h1>New Student Registration Form</h1>
+</header>
+<br>
+<table>
+<form method="post" action="insert.php">
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name" required></td></tr>
+<tr>
+<td>Register Number:</td>
+<td><input type="text" name="regno" required></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td><select name="gen">
+<option style="color:#bfbfbf;"><b>Please select</b></option>
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+</td>
+<tr>
+<td>Admission Type:</td>
+<td>
+<select name="adim">
+<option>Please select</option>
+<option>Regular</option><option>Lateral Entry</option>
+</select></td>
+</tr>
+<tr>
+<td>Quota:</td>
+<td><select name="qta">
+<option>Please select</option>
+<option>Counseling</option>
+<option>Management</option></select></td>
+</tr>
+
+</tr>
+<tr>
+<td>Date of Birth:</td>
+<td><input type="date"  name="dob" required></td>
+</tr>
+
+<tr>
+<td>Blood Group:</td>
+<td><select name="bg">
+<option>Please select</option>
+<option>A +ve</option>
+<option>B +ve</option>
+<option>O +ve</option>
+<option>AB +ve</option>
+<option>A -ve</option>
+<option>B -ve</option>
+<option>O -ve</option>
+<option>AB -ve</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Department:</td>
+<td><select name="dept">
+<option style="color:#bfbfbf;"><b>Please select</b></option>
+<option>Mech</option>
+<option>Civil</option>
+<option>MCT</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>EIE</option>
+<option>CSE</option>
+<option>IT</option>
+<option>Bio-Tech</option>
+<option>Nano-Tech</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>CGPA:</td>
+<td><input type="text" name="cgpa" required></td>
+</tr>
+
+<tr>
+<td>Year:</td>
+<td><select name="year">
+<option style="color:#bfbfbf;"><b>Please select</b></option>
+<option>First</option>
+<option>Second</option>
+<option>Third</option>
+<option>Fourth</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Regulation:</td>
+<td>
+<select name="reg" required>
+<option>Please select</option>
+<option>2010-2014</option>
+<option>2011-2015</option>
+<option>2012-2016</option>
+<option>2013-2017</option>
+<option>2014-2018</option>
+<option>2015-2019</option>
+<option>2016-2020</option>
+<option>2017-2021</option>
+<option>2018-2022</option>
+<option>2019-2023</option>
+<option>2020-2024</option>
+<option>2021-2025</option>
+<option>2022-2026</option>
+<option>2023-2027</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Staying:</td>
+<td><select name="stay">
+<option style="color:#bfbfbf;"><b>Please select</b></option>
+<option>Dayscholar</option>
+<option>Hosteller</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>E-mail:</td>
+<td><input type="email" name="mail" required></td>
+</tr>
+
+<tr>
+<td>Mobile No:</td>
+<td><input type="text" name="mob" required></td>
+</tr>
+
+<tr>
+<td>10<sup>th</sup> Percentage:</td>
+<td><input type="text" name="ten" required></td>
+</tr>
+
+<tr>
+<td>12<sup>th</sup> Percentage:</td>
+<td><input type="text" name="twelve" ></td>
+</tr>
+
+<tr>
+<td>Diploma stream:</td>
+<td>
+<select name="dipdept"><option style="color:#bfbfbf;"><b>Please select</b></option>
+<option>Mech</option>
+<option>Civil</option>
+<option>MCT</option>
+<option>ECE</option>
+<option>EEE</option>
+<option>EIE</option>
+<option>CSE</option>
+<option>ICE</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Diploma Percentage:</td>
+<td><input type="text" name="dipper"></td>
+</tr>
+
+<tr>
+<td> Permanent Address:</td>
+<td><textarea rows="4" cols="22" name="add" required></textarea></td>
+</tr>
+
+<tr>
+<td>Father's Name:</td>
+<td><input type="text" name="fname" requierd></td>
+</tr>
+<tr>
+<td>Father's Occupation:</td>
+<td><input type="text" name="foc" required></td>
+</tr><tr>
+<td>Father's Mobile_no:</td>
+<td><input type="text" name="fmn" required></td>
+</tr>
+<tr>
+<td>Mother's Name:</td>
+<td><input type="text" name="mname" required></td>
+</tr>
+
+<tr>
+<td>Mother's Occupation:</td>
+<td><input type="text" name="moc" required></td>
+</tr>
+<tr>
+<td>Family's annual Income:</td>
+<td>
+<select name="income" required>
+<option>Please select</option>
+<option>less than 1 lakh</option>
+<option>less than 2 lakhs</option>
+<option>less than 4 lakhs</option>
+<option>less than 6 lakhs</option>
+<option>less than 8 lakhs</option>
+<option>more than 8 lakhs</option>
+</select></td>
+</tr>
+<tr>
+<td>Community:</td>
+<td>
+<select name="com" required>
+<option>Please select</option>
+<option>OC</option>
+<option>BC</option>
+<option>MBC</option>
+<option>SC/ST</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Mother Tongue</td>
+<td><input type="text" name="mt" required></td>
+</tr>
+
+<tr>
+<td>Nationality:</td>
+<td><input type="text" name="nat" required></td>
+</tr>
+
+<tr>
+<td>Religion:</td>
+<td>
+<select name="rel" required>
+<option>Please select</option>
+<option>Hinduism</option>
+<option>Islam</option>
+<option>Christianity</option>
+<option>Buddhism</option>
+<option>Sikhism</option>
+<option>Jainism</option>
+<option>Zoroastrianism</option>
+<option>Others</option>
+</select></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td><center><input type="submit" value="Register"></center></td>      
+<td><center><input type="reset" value="Reset"></center></td>
+</tr>
+</form>
+</table>
+<br>
+<br>
+<h3 style="color: #0059b3;"> To get the students details click the below button</h3>
+<form action="search.html">
+    <input type="submit" value="search student">
+</form>
+<br><br>
+<br>
+<br>
+
+
+</body>
+</html>
